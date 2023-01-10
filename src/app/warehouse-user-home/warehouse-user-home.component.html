@@ -1,0 +1,155 @@
+<div class="container-fluid wu_homepage">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100" id="sidebar">
+                <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="fs-5 d-none d-sm-inline">Menu</span>
+                </a>
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                    <li class="nav-item">
+                        <a href="D:\test3\index.html" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Order Management</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/stockmanagement" routerLinkActive="active" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Stock Management</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Vehicle Management</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Setting</span>
+                        </a>
+                    </li>
+                    
+                </ul>           
+            </div>
+        </div>
+        
+
+
+        <div class="col py-3">
+
+            
+            <div class="dropdown pb-4" id="profile_section">
+                    <a href="#" class="d-flex align-items-center text-black text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="../../assets/user_profile.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
+                        <span class="d-none d-sm-inline mx-1">Herath W.N.D.<br><span id="user_type">Warehouse user</span></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+            </div>
+
+            <h1 class="Stock_mgt">Order Management</h1>
+
+            <div class="ordermgt_tabs">
+            <nav class="nav nav-pills flex-column flex-sm-row">
+              <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">Order</a>
+              <a class="flex-sm-fill text-sm-center nav-link" href="#" id="return">Return</a>
+            </nav>
+            </div>
+
+            <div class="om_container">
+				<div class="order_form">
+			  		<div class="order_title">Order Management table</div>
+                </div><br>
+			  			<table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col">Order ID</th>
+                              <th scope="col">Product</th>
+                              <th scope="col">Quantity</th>
+                              <th scope="col">Outlet User</th>
+                              <th scope="col">Weight</th>
+                              <th scope="col">Volume</th>
+                              <th scope="col">Vehicle</th>
+                              
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Product B</td>
+                              <td>450</td>
+                              <td>Jason</td>
+                              <td>900</td>
+                              <td>3.2</td>
+                              <td><div class="mb-3">
+                                <select id="vehicletype_type_o1" class="form-select" aria-label="Default select example" name="v_type_o1" ng-model="v_type_o1">
+                                  <option value="">Assign a vehicle</option>
+                                  <option value="1">Vehicle A</option>
+                                  <option value="2">Vehicle B</option>
+                                  <option value="3">Vehicle C</option>
+                                  <option value="3">Vehicle D</option>
+                                </select>
+                              </div></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>Product A</td>
+                              <td>600</td>
+                              <td>Peter</td>
+                              <td>600</td>
+                              <td>2</td>
+                              <td><div class="mb-3">
+                                <select id="vehicletype_type_o2" class="form-select" aria-label="Default select example" name="v_type_o2" ng-model="v_type_o2">
+                                  <option value="">Assign a vehicle</option>
+                                  <option value="1">Vehicle A</option>
+                                  <option value="2">Vehicle B</option>
+                                  <option value="3">Vehicle C</option>
+                                  <option value="3">Vehicle D</option>
+                                </select>
+                              </div></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td>Product A</td>
+                              <td>320</td>
+                              <td>Carl</td>
+                              <td>320</td>
+                              <td>1.1</td>
+                              <td><div class="mb-3">
+                                <select id="vehicletype_type_o3" class="form-select" aria-label="Default select example" name="v_type_o3" ng-model="v_type_o3">
+                                  <option value="">Assign a vehicle</option>
+                                  <option value="1">Vehicle A</option>
+                                  <option value="2">Vehicle B</option>
+                                  <option value="3">Vehicle C</option>
+                                  <option value="3">Vehicle D</option>
+                                </select>
+                              </div></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">4</th>
+                              <td>Product D</td>
+                              <td>850</td>
+                              <td>Jonathan</td>
+                              <td>1275</td>
+                              <td>2.75</td>
+                              <td><div class="mb-3">
+                                <select id="vehicletype_type_o4" class="form-select" aria-label="Default select example" name="v_type_o4" ng-model="v_type_o4">
+                                  <option value="">Assign a vehicle</option>
+                                  <option value="1">Vehicle A</option>
+                                  <option value="2">Vehicle B</option>
+                                  <option value="3">Vehicle C</option>
+                                  <option value="3">Vehicle D</option>
+                                </select>
+                              </div></td>
+                            </tr>
+                          </tbody>
+                        </table>
+			  			<button class="btn btn-primary" id="optimized_route" Value="Add_p">view optimized route</button>
+    				</div>
+    			</div>
+            </div>
+</div>
