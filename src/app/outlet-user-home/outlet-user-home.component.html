@@ -1,36 +1,8 @@
 <div class="container-fluid ou_homepage">
     <div class="row flex-nowrap">
-        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark" style="background-color: #ECEFF4;">
-            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100" id="sidebar">
-                <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                    <span class="fs-5 d-none d-sm-inline">Menu</span>
-                </a>
-                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                    <li class="nav-item">
-                        <a href="D:\test\index.html" class="nav-link align-middle px-0">
-                            <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link align-middle px-0">
-                            <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Route Optimization</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a routerLink="/orderhistory" routerLinkActive="active" class="nav-link px-0 align-middle">
-                            <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Order History</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link px-0 align-middle">
-                            <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Setting</span>
-                        </a>
-                    </li>
-                    
-                </ul>           
-            </div>
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0" style="height: 100vh;background-color: #ECEFF4;">
+        <app-outlet-user-sidebar></app-outlet-user-sidebar>
         </div>
-        
 
 
         <div class="col py-3">

@@ -6,10 +6,6 @@
     margin: 0;
 }
 
-#sidebar{
-    position: fixed;
-}
-
 .o_container{
     max-width: 600px;
     margin-left: 259px;
