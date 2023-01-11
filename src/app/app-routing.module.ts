@@ -21,10 +21,7 @@ const routes: Routes = [
   component: OrderHistoryComponent},
   {
   path: 'stockmanagement',
-  component: StockManagementComponent},
-  {
-  path: 'orderhome',
-  component: OutletUserHomeComponent}
+  component: StockManagementComponent}
 ];
 
 @NgModule({

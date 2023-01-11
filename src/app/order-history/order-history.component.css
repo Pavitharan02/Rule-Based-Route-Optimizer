@@ -40,3 +40,15 @@
     color: black;
     background-color: #ECEFF4;
 }
+
+#profile_name{
+    color: black;
+}
+
+#user_type{
+    font-size: 12px;
+}
+
+#profile_section{
+    margin-left: 1065px;
+}

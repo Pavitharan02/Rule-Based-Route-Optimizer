@@ -11,8 +11,8 @@ import { WarehouseUserHomeComponent } from './warehouse-user-home/warehouse-user
 import { StockManagementComponent } from './stock-management/stock-management.component';
 import { OutletUserSidebarComponent } from './outlet-user-sidebar/outlet-user-sidebar.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ProfileComponent } from './profile/profile.component';
 import { WarehouseUserSidebarComponent } from './warehouse-user-sidebar/warehouse-user-sidebar.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,6 @@ import { WarehouseUserSidebarComponent } from './warehouse-user-sidebar/warehous
     WarehouseUserHomeComponent,
     StockManagementComponent,
     OutletUserSidebarComponent,
-    ProfileComponent,
     WarehouseUserSidebarComponent,
   ],
   imports: [
@@ -31,6 +30,7 @@ import { WarehouseUserSidebarComponent } from './warehouse-user-sidebar/warehous
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
